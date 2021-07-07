@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1349px;
+    height: 100%;
+    background: rgb(255, 220, 220);
+}
+.container{
+    width: 80%;
+    display: flex;
+    background: rgb(255, 220, 220);
+    color: rgb(255, 78, 116);
+    margin: 0 auto;
+}
+.img-left{
+    background: linear-gradient(to left, rgb(255, 222, 222),rgb(255, 180, 196));
+    width: 65%;
+    box-shadow:0 0 20px rgb(253, 152, 152);
+    border-radius: 5px;
+}
+.left-color{
+    margin-top: 65px;
+    margin-left: 25px;
+    
+}
+.img-left h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+.img-left p{
+    margin-top: 15px;
+    max-width: 300px;
+    font-size: 15px;
+}
+.img-left img{
+    max-width: 90%;
+    padding-top: 70px;
+}
+.account{
+    background:rgb(255, 203, 214);
+    margin: 20px;
+    box-shadow:0 0 20px rgb(255, 153, 153);
+    border-radius: 10px;
+    max-width: 70%;
+}
+.button-account{
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgb(255, 164, 186);
+}
+#color{
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    background: linear-gradient(to right, rgb(255, 222, 222),rgb(255, 180, 196));
+    border-bottom: 2px solid rgb(255, 78, 116);
+    border-radius: 5px 0 0 0 ;
+    z-index: 1;
+}
+.button{
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    z-index: 10;
+    border: none;
+    cursor: pointer; /* vẫn là button khi border = none */ 
+    color:rgb(255, 78, 116);
+    font-size: 16px;
+    font-weight: 500;
+}
+.creat-account{
+    max-width: 100%;
+}
+#register{
+    display: none;
+    max-width: 100%;
+    font-size: 18px;
+    margin: 20px 15px;
+}
+#login{
+    width: 100%;
+}
+label{
+    display: inline-block;
+    width: 20%;
+}
+input{
+    width: 79%;
+    height: 35px;
+    outline: none;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ff8bdc;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.sdt{
+    display: flex;
+    width: 100%;
+}
+button{
+    width:25%;
+    margin-left:-10px;
+    height: 35px;
+    background:rgb(255, 216, 225);
+    border: none;
+    color: rgb(255, 115, 145);
+    border: 1px solid #ff8bdc;
+    border-radius: 0 5px 5px 0;
+    font-size: 14px;
+    outline: none;
+}
+input[type=tel]{
+    width: 55%;
+}
+input[type=radio]{
+    width: 20px;
+    margin-top: -7px;
+    margin-left: 4px;
+}
+.sex input:last-child{
+    width: 500px;
+}
+.sex{
+    display: flex;
+}
+.sex label{
+    padding-right: 70px;
+    margin-left: 5px;
+}
+#sex{
+    float: left;
+}
+.date-birth select{
+    width: 22%;
+    margin-right: 38px;
+    padding: 6px;
+    background: linear-gradient(to right, rgb(255, 244, 244), rgb(255, 211, 240));
+    border: 1px solid #ff8bdc;
+    color: rgb(255, 78, 116);
+    font-size: 14px;
+}
+.date-birth select:last-child{
+    margin-right:0;
+}
+.date-birth select option{
+    background:rgb(255, 220, 220);
+    overflow: auto;
+}
+.creat{
+    width: 100%;
+    margin-left: 138px;
+}
+.creat-checkbox{
+    display: flex;
+    width: 82%;
+}
+.creat .creat-checkbox input{
+    width: 20px;
+    margin-top: 20px;
+}
+.creat .creat-checkbox label{
+    margin: 20px 5px;
+    width: 100%;
+}
+input[type=submit]{
+    height: 42px;
+    background:rgb(255, 183, 183);
+    color:rgb(255, 78, 116);
+    font-size: 18px;
+    width: 79%;
+    margin-right: 100px;
+}
+.creat span{
+    width: 79%;
+    display:inline-block 
+}
+a{
+    text-decoration: none;
+}
+#login{
+    width: 691px;
+    height: 574px;
+}
+#login-account{
+    padding-top: 200px;
+    margin: 0 100px;
+}
+#login-account input[type=submit]{
+    margin-left: 100px;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập tạo Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./logo.jpg">
+</head>
+
+<body>
+    <div class="container">
+        <div class="img-left">
+            <div class="left-color">
+                <h3>Tạo tài khoản</h3>
+                <p>Tạo tài khoản để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp
+                    dẫn.</p>
+                <img src="./NienThu1.png" alt="">
+            </div>
+        </div>
+        <div class="account">
+            <div class="button-account">
+                <div id="color"></div>
+                <button type="button" class="button" onclick="login()">Đăng nhập</button>
+                <button type="button" class="button" onclick="register()">Tạo tài khoản</button>
+            </div>
+            <div class="account-right">
+                <div class="creat-account">
+                    <form action="http://facebook.com/quangaiti" id="register">
+                        <label for="hoten" id="label">Họ tên</label>
+                        <input type="text" placeholder="Nhập họ tên" id="hoten" required>
+                        <label for="sdt">SĐT</label>
+                        <input type="tel" placeholder="Nhập số điện thoại" id="sdt" required>
+                        <button>Gửi mã xác thực</button>
+                        <label for="xacthuc">Mã xác thực</label>
+                        <input type="text" placeholder="Nhập mã xác thực gửi tới số điện thoại trên" id="xacthuc"
+                            required>
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Nhập email" id="email" required>
+                        <label for="matkhau">Mật khẩu</label>
+                        <input type="password" placeholder="Mật khẩu từ 6 đến 32 ký tự" id="matkhau" required>
+                        <label id="sex" for="">Giới tính</label>
+                        <div class="sex">
+                            <input type="radio" name="sex" id="nam">
+                            <label for="nam">Nam</label>
+                            <input type="radio" name="sex" id="nu">
+                            <label for="nu">Nữ</label>
+                        </div>
+                        <div class="date-birth">
+                            <label for="">Ngày sinh</label>
+                            <select name="days" id="">
+                                <option value="">Ngày</option>
+                                <option value="2">01</option>
+                                <option value="3">02</option>
+                                <option value="">03</option>
+                                <option value="">04</option>
+                                <option value="">05</option>
+                                <option value="">06</option>
+                                <option value="">07</option>
+                                <option value="">08</option>
+                                <option value="">09</option>
+                                <option value="">10</option>
+                            </select>
+                            <select name="month" id="">
+                                <option value="1">Tháng</option>
+                                <option value="2">01</option>
+                                <option value="3">02</option>
+                                <option value="4">03</option>
+                                <option value="5">04</option>
+                                <option value="6">05</option>
+                                <option value="7">06</option>
+                                <option value="8">07</option>
+                                <option value="9">08</option>
+                                <option value="10">09</option>
+                                <option value="11">10</option>
+                                <option value="12">11</option>
+                                <option value="13">12</option>
+                            </select>
+                            <select name="year" id="">
+                                <option value="1">Năm</option>
+                                <option value="2">2001</option>
+                                <option value="3">2002</option>
+                                <option value="4">2003</option>
+                                <option value="5">2004</option>
+                                <option value="6">2005</option>
+                                <option value="7">2006</option>
+                                <option value="8">2007</option>
+                                <option value="9">2008</option>
+                                <option value="10">2009</option>
+                                <option value="11">2010</option>
+                                <option value="12">2011</option>
+                                <option value="13">2012</option>
+                            </select>
+                        </div>
+                        <div class="creat">
+                            <div class="creat-checkbox">
+                                <input type="checkbox" id="checkbox" required>
+                                <label for="checkbox">Nhận các thông tin và chương trình khuyến mãi của Tiki qua
+                                    email.</label>
+                            </div>
+                            <input type="submit" value="Tạo tài khoản">
+                            <span>Khi bạn nhấn đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo <a
+                                    href="">điều
+                                    kiện sử dụng và chính xác của Tiki.</a></span>
+                        </div>
+                    </form>
+                </div>
+                <div id="login">
+                    <form action="" id="login-account">
+                        <label for="taikhoan">Tài khoản</label>
+                        <input type="text" id="taikhoan" placeholder="Nhập tên tài khoản" required>
+                        <label for="matkhoan">Mật khẩu</label>
+                        <input type="password" id="matkhoan" placeholder="Nhập mật khẩu" required>
+                        <input type="submit" value="Đăng nhập">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("color");
+        function register() {
+            x.style.display = "none";
+            y.style.display = "block";
+            z.style.marginLeft = "180px";
+            z.style.borderRadius = "0";
+        }
+        function login() {
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.marginLeft = "0";
+            z.style.borderRadius = "5px 0 0 0  ";
+        }
+    </script>
+</body>
+
+</html>
